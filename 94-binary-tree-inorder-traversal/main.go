@@ -1,8 +1,9 @@
 package main
 
 import (
-	"strconv"
-	"strings"
+	"fmt"
+
+	. "github.com/rafael977/leetcode-solution/pkg/tree"
 )
 
 func inorderTraversal(root *TreeNode) []int {
@@ -17,40 +18,9 @@ func inorderTraversal(root *TreeNode) []int {
 	return arr
 }
 
-// TreeNode defines for a binary tree node.
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func main() {
-	arr := processInput("1,null,2,3")
-	root := buildTree(arr, 0)
+	root := BuildTree("1,null,2,3")
+	PrintTree(root)
 
-}
-
-func processInput(input string) []string {
-	arr := strings.Split(input, ",")
-	for i := range arr {
-		arr[i] = strings.TrimSpace(arr[i])
-	}
-
-	return arr
-}
-
-func buildTree(arr []string, idx int) *TreeNode {
-	var root *TreeNode
-
-	if idx < len(arr) {
-		if arr[idx] == "null" {
-			return nil
-		}
-		v, _ := strconv.Atoi(arr[idx])
-		root = &TreeNode{v, nil, nil}
-		root.Left = buildTree(arr, 2*idx+1)
-		root.Right = buildTree(arr, 2*idx+2)
-	}
-
-	return root
+	fmt.Println(inorderTraversal(root))
 }
