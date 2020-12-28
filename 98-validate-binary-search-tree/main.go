@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math"
 
-	. "github.com/rafael977/leetcode-solution/pkg/tree"
+	. "github.com/rafael977/leetcode-solution/pkg/structure"
 )
 
 func isValidBST(root *TreeNode) bool {

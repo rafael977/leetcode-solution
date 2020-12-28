@@ -1,5 +1,6 @@
 {
     "go.lintFlags": [
-        "98-validate-binary-search-tree/main.go"
+        "94-binary-tree-inorder-traversal",
+        "98-validate-binary-search-tree"
     ]
 }

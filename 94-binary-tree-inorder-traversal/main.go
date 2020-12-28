@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	. "github.com/rafael977/leetcode-solution/pkg/tree"
+	. "github.com/rafael977/leetcode-solution/pkg/structure"
 )
 
 func inorderTraversal(root *TreeNode) []int {
