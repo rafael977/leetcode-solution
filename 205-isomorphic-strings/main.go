@@ -9,7 +9,7 @@ func isIsomorphic(s string, t string) bool {
 
 	l := len(s)
 
-	sm, tm := make(map[byte]int, 0), make(map[byte]int, 0)
+	sm, tm := make(map[byte]int), make(map[byte]int)
 	for i := 0; i < l; i++ {
 		sc, oks := sm[s[i]]
 		tc, okt := tm[t[i]]

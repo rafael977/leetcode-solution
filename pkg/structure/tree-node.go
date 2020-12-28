@@ -13,6 +13,11 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+// NewTreeNode creates new TreeNode
+func NewTreeNode(val int) *TreeNode {
+	return &TreeNode{val, nil, nil}
+}
+
 // BuildTree build  binary tree
 func BuildTree(input string) *TreeNode {
 	input = strings.TrimSpace(input)
@@ -22,7 +27,7 @@ func BuildTree(input string) *TreeNode {
 
 	var parts = strings.Split(input, ",")
 	item := parts[0]
-	itemVal, _ := strconv.Atoi(parts[0])
+	itemVal, _ := strconv.Atoi(item)
 	root := &TreeNode{
 		Val:   itemVal,
 		Left:  nil,
