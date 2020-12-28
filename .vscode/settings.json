@@ -1,0 +1,5 @@
+{
+    "go.lintFlags": [
+        "98-validate-binary-search-tree/main.go"
+    ]
+}
