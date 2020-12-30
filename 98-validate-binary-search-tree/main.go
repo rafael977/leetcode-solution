@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math"
 
-	. "github.com/rafael977/leetcode-solution/pkg/structure"
+	. "github.com/rafael977/leetcode-solution/datastruct"
 )
 
 func isValidBST(root *TreeNode) bool {

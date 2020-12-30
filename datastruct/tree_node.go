@@ -1,4 +1,4 @@
-package structure
+package datastruct
 
 import (
 	"fmt"
@@ -81,11 +81,24 @@ func BuildTree(input string) *TreeNode {
 // PrintTree prints  tree
 func PrintTree(root *TreeNode) {
 	if root == nil {
-		return
+		fmt.Println("")
 	}
 
-	fmt.Print(root.Val)
+	output := ""
+	nodeQueue := make([]*TreeNode, 0)
+	nodeQueue = append(nodeQueue, root)
+	for len(nodeQueue) > 0 {
+		node := nodeQueue[0]
+		nodeQueue = nodeQueue[1:]
 
-	PrintTree(root.Left)
-	PrintTree(root.Right)
+		if node == nil {
+			output = fmt.Sprintf("%snull, ", output)
+			continue
+		}
+
+		output = fmt.Sprintf("%s%d, ", output, node.Val)
+		nodeQueue = append(nodeQueue, node.Left)
+		nodeQueue = append(nodeQueue, node.Right)
+	}
+	fmt.Println(output[:len(output)-2])
 }

@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	. "github.com/rafael977/leetcode-solution/pkg/structure"
+	. "github.com/rafael977/leetcode-solution/datastruct"
 )
 
 func zigzagLevelOrder(root *TreeNode) [][]int {
