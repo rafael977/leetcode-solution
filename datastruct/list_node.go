@@ -52,3 +52,26 @@ func PrintLinkedList(head *ListNode) {
 	}
 	fmt.Println()
 }
+
+func GenCycle(head *ListNode, pos int) *ListNode {
+	if pos < 0 {
+		return head
+	}
+
+	i := 0
+	var s, tail *ListNode
+	c := head
+	for c != nil {
+		if i == pos {
+			s = c
+		}
+		if c.Next == nil {
+			tail = c
+		}
+		c = c.Next
+		i++
+	}
+	tail.Next = s
+
+	return head
+}
