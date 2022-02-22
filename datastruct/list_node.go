@@ -38,19 +38,21 @@ func BuildLinkedList(input string) *ListNode {
 	return head
 }
 
-func PrintLinkedList(head *ListNode) {
+func PrintLinkedList(head *ListNode) string {
 	if head == nil {
-		fmt.Println("")
+		return ""
 	}
 
+	b := strings.Builder{}
 	for head != nil {
-		fmt.Printf("%d", head.Val)
+		_, _ = b.WriteString(fmt.Sprintf("%d", head.Val))
 		if head.Next != nil {
-			fmt.Print(", ")
+			_, _ = b.WriteString(", ")
 		}
 		head = head.Next
 	}
-	fmt.Println()
+	_, _ = b.WriteString("\n")
+	return b.String()
 }
 
 func GenCycle(head *ListNode, pos int) *ListNode {
