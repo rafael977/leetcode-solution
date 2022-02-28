@@ -1,9 +1,22 @@
 package main
 
-import (
-	. "github.com/rafael977/leetcode-solution/datastruct"
-)
+//lint:ignore ST1001 dot import
+import . "github.com/rafael977/leetcode-solution/datastruct"
 
+/*
+ * @lc app=leetcode id=148 lang=golang
+ *
+ * [133] Clone Graph
+ */
+
+// @lc code=start
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
 func sortList(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 		return head
@@ -54,13 +67,4 @@ func merge(l1 *ListNode, l2 *ListNode) *ListNode {
 	return head.Next
 }
 
-func main() {
-	head := BuildLinkedList("4,2,1,3")
-	PrintLinkedList(sortList(head))
-
-	head = BuildLinkedList("-1,5,3,4,0")
-	PrintLinkedList(sortList(head))
-
-	head = BuildLinkedList("")
-	PrintLinkedList(sortList(head))
-}
+// @lc code=end
