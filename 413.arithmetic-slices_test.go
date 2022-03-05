@@ -1,0 +1,43 @@
+package main
+
+import "testing"
+
+func Test_numberOfArithmeticSlices(t *testing.T) {
+	type args struct {
+		nums []int
+	}
+	tests := []struct {
+		name    string
+		args    args
+		wantAns int
+	}{
+		{
+			name: "tc1",
+			args: args{
+				nums: []int{1, 2, 3, 4},
+			},
+			wantAns: 3,
+		},
+		{
+			name: "tc2",
+			args: args{
+				nums: []int{1},
+			},
+			wantAns: 0,
+		},
+		{
+			name: "tc3",
+			args: args{
+				nums: []int{1, 2, 3, 4, 6, 8, 10},
+			},
+			wantAns: 6,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if gotAns := numberOfArithmeticSlices(tt.args.nums); gotAns != tt.wantAns {
+				t.Errorf("numberOfArithmeticSlices() = %v, want %v", gotAns, tt.wantAns)
+			}
+		})
+	}
+}
