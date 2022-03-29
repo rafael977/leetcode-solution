@@ -1,5 +1,12 @@
 package main
 
+/*
+ * @lc app=leetcode id=81 lang=golang
+ *
+ * [81] Search in Rotated Sorted Array II
+ */
+
+// @lc code=start
 func search(nums []int, target int) bool {
 	for _, v := range nums {
 		if v == target {
@@ -10,7 +17,4 @@ func search(nums []int, target int) bool {
 	return false
 }
 
-func main() {
-	println(search([]int{2, 5, 6, 0, 0, 1, 2}, 0))
-	println(search([]int{2, 5, 6, 0, 0, 1, 2}, 3))
-}
+// @lc code=end
