@@ -79,12 +79,12 @@ func BuildTree(input string) *TreeNode {
 }
 
 // PrintTree prints  tree
-func PrintTree(root *TreeNode) {
+func PrintTree(root *TreeNode) string {
 	if root == nil {
-		fmt.Println("")
+		return "[]"
 	}
 
-	output := ""
+	output := "["
 	nodeQueue := make([]*TreeNode, 0)
 	nodeQueue = append(nodeQueue, root)
 	for len(nodeQueue) > 0 {
@@ -100,5 +100,5 @@ func PrintTree(root *TreeNode) {
 		nodeQueue = append(nodeQueue, node.Left)
 		nodeQueue = append(nodeQueue, node.Right)
 	}
-	fmt.Println(output[:len(output)-2])
+	return output[:len(output)-2] + "]"
 }
