@@ -1,9 +1,16 @@
-package main
+package reverselinkedlistii
 
 import (
 	. "github.com/rafael977/leetcode-solution/datastruct"
 )
 
+/*
+ * @lc app=leetcode id=92 lang=golang
+ *
+ * [92] Reverse Linked List II
+ */
+
+// @lc code=start
 func reverseBetween(head *ListNode, m int, n int) *ListNode {
 	if head == nil {
 		return nil
@@ -35,13 +42,4 @@ func reverseBetween(head *ListNode, m int, n int) *ListNode {
 	}
 }
 
-func main() {
-	head := BuildLinkedList("1,2,3,4,5")
-	PrintLinkedList(reverseBetween(head, 2, 4))
-
-	head = BuildLinkedList("1,2,3,4,5")
-	PrintLinkedList(reverseBetween(head, 1, 4))
-
-	head = BuildLinkedList("1,2,3,4,5")
-	PrintLinkedList(reverseBetween(head, 1, 5))
-}
+// @lc code=end
