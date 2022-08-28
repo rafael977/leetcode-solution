@@ -1,11 +1,21 @@
-package main
+package palindromelinkedlist
 
-import (
-	"fmt"
+import . "github.com/rafael977/leetcode-solution/datastruct"
 
-	. "github.com/rafael977/leetcode-solution/datastruct"
-)
+/*
+ * @lc app=leetcode id=234 lang=golang
+ *
+ * [234] Palindrome Linked List
+ */
 
+// @lc code=start
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
 func isPalindrome(head *ListNode) bool {
 	if head == nil || head.Next == nil {
 		return true
@@ -55,13 +65,4 @@ func reverse(head *ListNode) *ListNode {
 	return p
 }
 
-func main() {
-	head := BuildLinkedList("1,2")
-	fmt.Printf("%v\n", isPalindrome(head))
-
-	head = BuildLinkedList("1,2,2,1")
-	fmt.Printf("%v\n", isPalindrome(head))
-
-	head = BuildLinkedList("1,0,1")
-	fmt.Printf("%v\n", isPalindrome(head))
-}
+// @lc code=end
