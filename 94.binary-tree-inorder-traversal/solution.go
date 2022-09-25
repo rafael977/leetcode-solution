@@ -1,11 +1,16 @@
-package main
+package binarytreeinordertraversal
 
 import (
-	"fmt"
-
 	. "github.com/rafael977/leetcode-solution/datastruct"
 )
 
+/*
+ * @lc app=leetcode id=94 lang=golang
+ *
+ * [97] Binary Tree Inorder Traversal
+ */
+
+// @lc code=start
 func inorderTraversal(root *TreeNode) []int {
 	if root == nil {
 		return []int{}
@@ -18,9 +23,4 @@ func inorderTraversal(root *TreeNode) []int {
 	return arr
 }
 
-func main() {
-	root := BuildTree("1,null,2,3")
-	PrintTree(root)
-
-	fmt.Println(inorderTraversal(root))
-}
+// @lc code=end
