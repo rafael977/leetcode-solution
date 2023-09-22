@@ -1,7 +1,12 @@
-package main
+package medianoftwosortedarrays
 
-import "fmt"
+/*
+ * @lc app=leetcode id=4 lang=golang
+ *
+ * [4] Median of Two Sorted Arrays
+ */
 
+// @lc code=start
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	n := len(nums1) + len(nums2)
 	if n == 0 {
@@ -42,14 +47,4 @@ func findKthMin(num1, num2 []int, k int) int {
 	}
 }
 
-func main() {
-	fmt.Println(findMedianSortedArrays([]int{1, 3}, []int{2}))
-
-	fmt.Println(findMedianSortedArrays([]int{1, 2}, []int{3, 4}))
-
-	fmt.Println(findMedianSortedArrays([]int{0, 0}, []int{0, 0}))
-
-	fmt.Println(findMedianSortedArrays([]int{1}, []int{}))
-
-	fmt.Println(findMedianSortedArrays([]int{}, []int{4}))
-}
+// @lc code=end

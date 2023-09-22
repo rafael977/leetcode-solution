@@ -25,6 +25,13 @@ func Test_minCostConnectPoints(t *testing.T) {
 			},
 			wantAns: 18,
 		},
+		{
+			name: "tc3",
+			args: args{
+				points: [][]int{{2, -3}, {-17, -8}, {13, 8}, {-17, -15}},
+			},
+			wantAns: 53,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
