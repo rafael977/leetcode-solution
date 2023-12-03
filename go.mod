@@ -1,3 +1,3 @@
 module github.com/rafael977/leetcode-solution
 
-go 1.18
+go 1.21
