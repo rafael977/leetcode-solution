@@ -1,4 +1,4 @@
-package findifpathexistsingraph
+package leetcodesolution
 
 import "testing"
 
@@ -47,6 +47,16 @@ func Test_validPath(t *testing.T) {
 				},
 				source:      7,
 				destination: 5,
+			},
+			want: true,
+		},
+		{
+			name: "tc4",
+			args: args{
+				n:           1,
+				edges:       [][]int{},
+				source:      0,
+				destination: 0,
 			},
 			want: true,
 		},
