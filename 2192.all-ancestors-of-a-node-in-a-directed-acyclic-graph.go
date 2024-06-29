@@ -18,11 +18,13 @@ func getAncestors(n int, edges [][]int) (ans [][]int) {
 	dfs = func(x int) {
 		vis[x] = true
 		for _, v := range g[x] {
-			dfs(v)
+			if !vis[v] {
+				dfs(v)
+			}
 		}
 	}
 	ans = make([][]int, n)
-	for i := 0; i < n; i++ {
+	for i := range ans {
 		clear(vis)
 		dfs(i)
 		vis[i] = false
