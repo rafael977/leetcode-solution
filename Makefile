@@ -5,4 +5,4 @@ arrange:
 	mkdir $$dirname; \
 	mv $${dirname}.go solution.go; \
 	mv solution.go $${dirname}; \
-	code $${dirname}/solution.go
+	code -r $${dirname}/solution.go
