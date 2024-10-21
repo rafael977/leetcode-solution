@@ -1,0 +1,14 @@
+input:
+"ababccc"
+output:
+5
+
+input:
+"aba"
+output:
+2
+
+input:
+"aa"
+output:
+1
