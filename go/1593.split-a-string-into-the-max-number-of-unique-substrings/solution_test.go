@@ -2,7 +2,7 @@
 // leetgo: 1.4.9
 // https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/
 
-package main
+package splitastringintothemaxnumberofuniquesubstrings
 
 import "testing"
 
