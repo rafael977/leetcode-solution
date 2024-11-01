@@ -38,9 +38,3 @@ class Solution:
 
 
 # @lc code=end
-
-if __name__ == "__main__":
-    l1: ListNode = deserialize("ListNode", read_line())
-    l2: ListNode = deserialize("ListNode", read_line())
-    ans = Solution().addTwoNumbers(l1, l2)
-    print("\noutput:", serialize(ans, "ListNode"))
