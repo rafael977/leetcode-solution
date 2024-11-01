@@ -1,7 +1,10 @@
-from solution import Solution
+from .solution import Solution
 import pytest
 
-test_cases = [([1, 3, 1], [3, 1, 1], 5), ([4, 1, 1], [1, 1, 3], 7)]
+test_cases = [
+    pytest.param([1, 3, 1], [3, 1, 1], 5, id="tc1"),
+    pytest.param([4, 1, 1], [1, 1, 3], 7, id="tc2"),
+]
 
 
 @pytest.mark.parametrize("energyDrinkA, energyDrinkB, wanted", test_cases)
