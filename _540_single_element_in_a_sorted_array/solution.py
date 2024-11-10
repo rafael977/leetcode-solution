@@ -2,8 +2,7 @@
 # leetgo: 1.4.9
 # https://leetcode.cn/problems/single-element-in-a-sorted-array/
 
-from typing import *
-from leetgo_py import *
+from typing import List
 
 # @lc code=begin
 
@@ -21,8 +20,3 @@ class Solution:
 
 
 # @lc code=end
-
-if __name__ == "__main__":
-    nums: List[int] = deserialize("List[int]", read_line())
-    ans = Solution().singleNonDuplicate(nums)
-    print("\noutput:", serialize(ans, "integer"))
