@@ -2,8 +2,8 @@
 # leetgo: 1.4.9
 # https://leetcode.cn/problems/reverse-nodes-in-k-group/
 
-from typing import *
-from leetgo_py import *
+from typing import Optional
+from leetgo_py import ListNode
 
 # @lc code=begin
 
