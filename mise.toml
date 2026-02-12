@@ -1,0 +1,7 @@
+[tools]
+rust = "1.88"
+node = "24"
+"cargo:leetcode-cli" = "latest"
+
+[env]
+'_'.file = [".env"]
