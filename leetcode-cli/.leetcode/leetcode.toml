@@ -1,0 +1,20 @@
+[code]
+editor = "code"
+test = false
+lang = "rust"
+edit_code_marker = true
+start_marker = "@lc start"
+end_marker = "@lc end"
+# comment syntax
+comment_leading = "//"
+
+[cookies]
+csrf = ""
+session = ""
+site = "leetcode.cn"
+
+[storage]
+cache = "Problems"
+code = "src"
+root = "~/Developer/leetcode-solution"
+scripts = "scripts"
