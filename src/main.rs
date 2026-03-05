@@ -4,6 +4,8 @@ mod p1356;
 mod p1404;
 #[path = "1582.special-positions-in-a-binary-matrix.rs"]
 mod p1582;
+#[path = "1758.minimum-changes-to-make-alternating-binary-string.rs"]
+mod p1758;
 
 fn main() {
     println!("Hello, world!");
