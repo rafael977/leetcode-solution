@@ -6,6 +6,8 @@ mod p1404;
 mod p1582;
 #[path = "1758.minimum-changes-to-make-alternating-binary-string.rs"]
 mod p1758;
+#[path = "1784.check-if-binary-string-has-at-most-one-segment-of-ones.rs"]
+mod p1784;
 
 fn main() {
     println!("Hello, world!");
