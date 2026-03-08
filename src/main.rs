@@ -8,6 +8,8 @@ mod p1582;
 mod p1758;
 #[path = "1784.check-if-binary-string-has-at-most-one-segment-of-ones.rs"]
 mod p1784;
+#[path = "1980.find-unique-binary-string.rs"]
+mod p1980;
 
 fn main() {
     println!("Hello, world!");
