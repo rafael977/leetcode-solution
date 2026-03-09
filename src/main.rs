@@ -10,6 +10,8 @@ mod p1758;
 mod p1784;
 #[path = "1980.find-unique-binary-string.rs"]
 mod p1980;
+#[path = "3129.find-all-possible-stable-binary-arrays-i.rs"]
+mod p3129;
 
 fn main() {
     println!("Hello, world!");
