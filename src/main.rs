@@ -12,6 +12,8 @@ mod p1784;
 mod p1980;
 #[path = "3129.find-all-possible-stable-binary-arrays-i.rs"]
 mod p3129;
+#[path = "3130.find-all-possible-stable-binary-arrays-ii.rs"]
+mod p3130;
 
 fn main() {
     println!("Hello, world!");
