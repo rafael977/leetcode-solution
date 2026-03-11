@@ -1,3 +1,5 @@
+#[path = "1009.complement-of-base-10-integer.rs"]
+mod p1009;
 #[path = "1356.sort-integers-by-the-number-of-1-bits.rs"]
 mod p1356;
 #[path = "1404.number-of-steps-to-reduce-a-number-in-binary-representation-to-one.rs"]
