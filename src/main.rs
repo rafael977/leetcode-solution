@@ -16,6 +16,8 @@ mod p1980;
 mod p3129;
 #[path = "3130.find-all-possible-stable-binary-arrays-ii.rs"]
 mod p3130;
+#[path = "3296.minimum-number-of-seconds-to-make-mountain-height-zero.rs"]
+mod p3296;
 
 fn main() {
     println!("Hello, world!");
