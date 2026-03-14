@@ -4,6 +4,8 @@ mod p1009;
 mod p1356;
 #[path = "1404.number-of-steps-to-reduce-a-number-in-binary-representation-to-one.rs"]
 mod p1404;
+#[path = "1415.the-k-th-lexicographical-string-of-all-happy-strings-of-length-n.rs"]
+mod p1415;
 #[path = "1582.special-positions-in-a-binary-matrix.rs"]
 mod p1582;
 #[path = "1758.minimum-changes-to-make-alternating-binary-string.rs"]
