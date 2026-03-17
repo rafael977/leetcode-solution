@@ -8,6 +8,8 @@ mod p1404;
 mod p1415;
 #[path = "1582.special-positions-in-a-binary-matrix.rs"]
 mod p1582;
+#[path = "1727.largest-submatrix-with-rearrangements.rs"]
+mod p1727;
 #[path = "1758.minimum-changes-to-make-alternating-binary-string.rs"]
 mod p1758;
 #[path = "1784.check-if-binary-string-has-at-most-one-segment-of-ones.rs"]
