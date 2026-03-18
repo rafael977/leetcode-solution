@@ -16,6 +16,8 @@ mod p1758;
 mod p1784;
 #[path = "1980.find-unique-binary-string.rs"]
 mod p1980;
+#[path = "3070.count-submatrices-with-top-left-element-and-sum-less-than-k.rs"]
+mod p3070;
 #[path = "3129.find-all-possible-stable-binary-arrays-i.rs"]
 mod p3129;
 #[path = "3130.find-all-possible-stable-binary-arrays-ii.rs"]
