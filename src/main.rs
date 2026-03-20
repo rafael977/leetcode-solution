@@ -24,6 +24,8 @@ mod p3129;
 mod p3130;
 #[path = "3296.minimum-number-of-seconds-to-make-mountain-height-zero.rs"]
 mod p3296;
+#[path = "3567.minimum-absolute-difference-in-sliding-submatrix.rs"]
+mod p3567;
 
 fn main() {
     println!("Hello, world!");
