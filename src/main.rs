@@ -26,6 +26,8 @@ mod p3130;
 mod p3296;
 #[path = "3567.minimum-absolute-difference-in-sliding-submatrix.rs"]
 mod p3567;
+#[path = "3643.flip-square-submatrix-vertically.rs"]
+mod p3643;
 
 fn main() {
     println!("Hello, world!");
