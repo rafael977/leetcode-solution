@@ -14,6 +14,8 @@ mod p1727;
 mod p1758;
 #[path = "1784.check-if-binary-string-has-at-most-one-segment-of-ones.rs"]
 mod p1784;
+#[path = "1886.determine-whether-matrix-can-be-obtained-by-rotation.rs"]
+mod p1886;
 #[path = "1980.find-unique-binary-string.rs"]
 mod p1980;
 #[path = "3070.count-submatrices-with-top-left-element-and-sum-less-than-k.rs"]
