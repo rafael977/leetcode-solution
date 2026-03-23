@@ -8,6 +8,8 @@ mod p1404;
 mod p1415;
 #[path = "1582.special-positions-in-a-binary-matrix.rs"]
 mod p1582;
+#[path = "1594.maximum-non-negative-product-in-a-matrix.rs"]
+mod p1594;
 #[path = "1727.largest-submatrix-with-rearrangements.rs"]
 mod p1727;
 #[path = "1758.minimum-changes-to-make-alternating-binary-string.rs"]
