@@ -30,6 +30,8 @@ mod p3129;
 mod p3130;
 #[path = "3296.minimum-number-of-seconds-to-make-mountain-height-zero.rs"]
 mod p3296;
+#[path = "3546.equal-sum-grid-partition-i.rs"]
+mod p3546;
 #[path = "3567.minimum-absolute-difference-in-sliding-submatrix.rs"]
 mod p3567;
 #[path = "3643.flip-square-submatrix-vertically.rs"]
