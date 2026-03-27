@@ -22,6 +22,8 @@ mod p1886;
 mod p1980;
 #[path = "2906.construct-product-matrix.rs"]
 mod p2906;
+#[path = "2946.matrix-similarity-after-cyclic-shifts.rs"]
+mod p2946;
 #[path = "3070.count-submatrices-with-top-left-element-and-sum-less-than-k.rs"]
 mod p3070;
 #[path = "3129.find-all-possible-stable-binary-arrays-i.rs"]
