@@ -20,6 +20,8 @@ mod p1784;
 mod p1886;
 #[path = "1980.find-unique-binary-string.rs"]
 mod p1980;
+#[path = "2840.check-if-strings-can-be-made-equal-with-operations-ii.rs"]
+mod p2840;
 #[path = "2906.construct-product-matrix.rs"]
 mod p2906;
 #[path = "2946.matrix-similarity-after-cyclic-shifts.rs"]
