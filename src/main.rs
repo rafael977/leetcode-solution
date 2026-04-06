@@ -40,6 +40,8 @@ mod p3546;
 mod p3567;
 #[path = "3643.flip-square-submatrix-vertically.rs"]
 mod p3643;
+#[path = "874.walking-robot-simulation.rs"]
+mod p874;
 
 fn main() {
     println!("Hello, world!");
