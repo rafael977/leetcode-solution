@@ -42,6 +42,8 @@ mod p3567;
 mod p3643;
 #[path = "3740.minimum-distance-between-three-equal-elements-i.rs"]
 mod p3740;
+#[path = "3741.minimum-distance-between-three-equal-elements-ii.rs"]
+mod p3741;
 #[path = "874.walking-robot-simulation.rs"]
 mod p874;
 
